@@ -11,11 +11,11 @@ record:
 query:
 	@echo "running ./examples/postgres/query"
 
-    ifndef query
-		  @go run ./examples/postgres/query 
-    else
-		  @go run ./examples/postgres/query -query $(query)
-    endif
+ifndef query
+	@go run ./examples/postgres/query 
+else
+	@go run ./examples/postgres/query -query $(query)
+endif
 
 update:
 	@echo "running ./examples/postgres/update"
@@ -28,8 +28,8 @@ delete:
 connection:
 	@echo "running ./examples/postgres/connection"
 
-    ifndef dsn
-		  @go run ./examples/postgres/connection 
-    else
-		  @go run ./examples/postgres/connection -dsn $(dsn)
-    endif
+ifndef dsn
+	@go run ./examples/postgres/connection 
+else
+	@go run ./examples/postgres/connection -dsn $(dsn)
+endif
