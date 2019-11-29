@@ -20,6 +20,14 @@ transient:
 	@echo "running ./examples/postgres/tempField"
 	@go run ./examples/postgres/tempField
 
+unique:
+	@echo "running ./examples/postgres/unique"
+	@go run ./examples/postgres/unique
+
+index:
+	@echo "running ./examples/postgres/index"
+	@go run ./examples/postgres/index
+
 record:
 	@echo "running ./examples/postgres/createRecord"
 	@go run ./examples/postgres/createRecord
