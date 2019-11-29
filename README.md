@@ -21,7 +21,7 @@
 
 Use the repository's Makefile to run examples.
 
-Commit messages use Angular commit messages enforced by [commitizen-go](https://github.com/lintingzhen/commitizen-go). So make sure to read them for documentation or comments in the example files.
+Commit messages use Angular commit messages enforced by [commitizen-go](https://github.com/lintingzhen/commitizen-go). So make sure to read them for documentation.
 
 ```
 make connection
@@ -34,6 +34,8 @@ make record
 make query
 make update
 make delete
+make unique
+make index
 ```
 
 ### Debugging
