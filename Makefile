@@ -12,6 +12,10 @@ fields:
 	@echo "running ./examples/postgres/createModelFields"
 	@go run ./examples/postgres/createModelFields
 
+increment:
+	@echo "running ./examples/postgres/increment"
+	@go run ./examples/postgres/increment
+
 record:
 	@echo "running ./examples/postgres/createRecord"
 	@go run ./examples/postgres/createRecord
