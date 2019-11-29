@@ -16,6 +16,10 @@ increment:
 	@echo "running ./examples/postgres/increment"
 	@go run ./examples/postgres/increment
 
+transient:
+	@echo "running ./examples/postgres/tempField"
+	@go run ./examples/postgres/tempField
+
 record:
 	@echo "running ./examples/postgres/createRecord"
 	@go run ./examples/postgres/createRecord
