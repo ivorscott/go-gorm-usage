@@ -26,7 +26,7 @@ func main() {
 	query := flag.String("query", "first", "Query the first or last record")
 	flag.Parse()
 
-	db, err := gorm.Open("postgres", "postgres://ivorscott:@localhost:5432/gorm-usage?sslmode=disable")
+	db, err := gorm.Open("postgres", "postgres://postgres:@localhost:5432/gorm-usage?sslmode=disable")
 	if err != nil {
 		panic(err.Error())
 	}
@@ -36,7 +36,7 @@ func main() {
 	dbase := db.DB()
 	defer dbase.Close()
 
-	db.DropTable(&User{})
+	db.DropTableIfExists(&User{})
 	db.CreateTable(&User{})
 
 	for _, user := range users {

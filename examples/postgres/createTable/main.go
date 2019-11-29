@@ -22,7 +22,7 @@ type User struct {
 // }
 
 func main() {
-	db, err := gorm.Open("postgres", "postgres://ivorscott:@localhost:5432/gorm-usage?sslmode=disable")
+	db, err := gorm.Open("postgres", "postgres://postgres:@localhost:5432/gorm-usage?sslmode=disable")
 	if err != nil {
 		panic(err.Error())
 	}
@@ -32,7 +32,7 @@ func main() {
 	dbase := db.DB()
 	defer dbase.Close()
 
-	db.DropTable(&User{})
+	db.DropTableIfExists(&User{})
 
 	// remove automatic pluralization of table names
 	// db.SingularTable(true)
