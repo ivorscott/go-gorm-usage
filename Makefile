@@ -4,6 +4,10 @@ table:
 	@echo "running ./examples/postgres/createTable"
 	@go run ./examples/postgres/createTable
 
+model:
+	@echo "running ./examples/postgres/createModel"
+	@go run ./examples/postgres/createModel
+
 record:
 	@echo "running ./examples/postgres/createRecord"
 	@go run ./examples/postgres/createRecord
