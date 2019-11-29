@@ -8,6 +8,10 @@ model:
 	@echo "running ./examples/postgres/createModel"
 	@go run ./examples/postgres/createModel
 
+fields:
+	@echo "running ./examples/postgres/createModelFields"
+	@go run ./examples/postgres/createModelFields
+
 record:
 	@echo "running ./examples/postgres/createRecord"
 	@go run ./examples/postgres/createRecord
