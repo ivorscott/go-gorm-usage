@@ -1,5 +1,14 @@
 #!make
 
+connection:
+	@echo "running ./examples/postgres/connection"
+
+ifndef dsn
+	@go run ./examples/postgres/connection 
+else
+	@go run ./examples/postgres/connection -dsn $(dsn)
+endif
+
 table:
 	@echo "running ./examples/postgres/createTable"
 	@go run ./examples/postgres/createTable
@@ -7,6 +16,10 @@ table:
 model:
 	@echo "running ./examples/postgres/createModel"
 	@go run ./examples/postgres/createModel
+
+record:
+	@echo "running ./examples/postgres/createRecord"
+	@go run ./examples/postgres/createRecord
 
 fields:
 	@echo "running ./examples/postgres/createModelFields"
@@ -20,18 +33,6 @@ transient:
 	@echo "running ./examples/postgres/tempField"
 	@go run ./examples/postgres/tempField
 
-unique:
-	@echo "running ./examples/postgres/unique"
-	@go run ./examples/postgres/unique
-
-index:
-	@echo "running ./examples/postgres/index"
-	@go run ./examples/postgres/index
-
-record:
-	@echo "running ./examples/postgres/createRecord"
-	@go run ./examples/postgres/createRecord
-
 query:
 	@echo "running ./examples/postgres/query"
 
@@ -43,17 +44,40 @@ endif
 
 update:
 	@echo "running ./examples/postgres/update"
-	@go run ./examples/postgres/update 
+	@go run ./examples/postgres/update
 
 delete:
 	@echo "running ./examples/postgres/delete"
 	@go run ./examples/postgres/delete 
 
-connection:
-	@echo "running ./examples/postgres/connection"
+unique:
+	@echo "running ./examples/postgres/unique"
+	@go run ./examples/postgres/unique
 
-ifndef dsn
-	@go run ./examples/postgres/connection 
-else
-	@go run ./examples/postgres/connection -dsn $(dsn)
-endif
+index:
+	@echo "running ./examples/postgres/index"
+	@go run ./examples/postgres/index
+
+required:
+	@echo "running ./examples/postgres/required"
+	@go run ./examples/postgres/required
+
+default:
+	@echo "running ./examples/postgres/default"
+	@go run ./examples/postgres/default
+
+primary:
+	@echo "running ./examples/postgres/primary"
+	@go run ./examples/postgres/primary
+
+rename_column:
+	@echo "running ./examples/postgres/renameColumn"
+	@go run ./examples/postgres/renameColumn
+
+embedding:
+	@echo "running ./examples/postgres/embedding"
+	@go run ./examples/postgres/embedding
+
+index_call:
+	@echo "running ./examples/postgres/indexCall"
+	@go run ./examples/postgres/indexCall
