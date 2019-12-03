@@ -1,5 +1,7 @@
 #!make
 
+# Basics
+
 connection:
 	@echo "running ./examples/postgres/connection"
 
@@ -81,3 +83,25 @@ embedding:
 index_call:
 	@echo "running ./examples/postgres/indexCall"
 	@go run ./examples/postgres/indexCall
+
+# Relationships
+
+one_to_one:
+	@echo "running ./examples/postgres/_relationships/oneToOne"
+	@go run ./examples/postgres/_relationships/oneToOne
+
+foreign_key:
+	@echo "running ./examples/postgres/_relationships/foreignKey"
+	@go run ./examples/postgres/_relationships/foreignKey
+
+one_to_many:
+	@echo "running ./examples/postgres/_relationships/oneToMany"
+	@go run ./examples/postgres/_relationships/oneToMany
+
+many_to_many:
+	@echo "running ./examples/postgres/_relationships/manyToMany"
+	@go run ./examples/postgres/_relationships/manyToMany
+
+polymorphic:
+	@echo "running ./examples/postgres/_relationships/polymorphism"
+	@go run ./examples/postgres/_relationships/polymorphism
