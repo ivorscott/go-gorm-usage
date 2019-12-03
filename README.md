@@ -139,7 +139,9 @@ make remove_entity
   <summary>See commands</summary>
 
 ```
-
+make callbacks
+make scopes
+make logging
 ```
 
 </details>
