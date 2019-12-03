@@ -173,3 +173,25 @@ grouping:
 raw_sql:
 	@echo "running ./examples/postgres/_querying/rawSql"
 	@go run ./examples/postgres/_querying/rawSql
+
+# Modifying
+
+add_column:
+	@echo "running ./examples/postgres/_modifying/addColumn"
+	@go run ./examples/postgres/_modifying/addColumn
+
+add_index:
+	@echo "running ./examples/postgres/_modifying/addIndex"
+	@go run ./examples/postgres/_modifying/addIndex
+
+drop_column:
+	@echo "running ./examples/postgres/_modifying/dropColumn"
+	@go run ./examples/postgres/_modifying/dropColumn
+
+modify_column:
+	@echo "running ./examples/postgres/_query_modifyinging/modifyColumn"
+	@go run ./examples/postgres/_modifying/modifyColumn
+
+remove_entity:
+	@echo "running ./examples/postgres/_modifying/removeEntity"
+	@go run ./examples/postgres/_modifying/removeEntity
