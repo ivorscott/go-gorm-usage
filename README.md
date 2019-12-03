@@ -103,8 +103,17 @@ make transactions
 <details>
   <summary>See commands</summary>
 
-```
-
+```makefile
+make find
+make where_clauses
+make eager_loading
+make limits_orderby_offset
+make subsets
+make attribute_assignments
+make joins
+make rows
+make grouping
+make raw_sql
 ```
 
 </details>
