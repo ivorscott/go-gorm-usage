@@ -87,8 +87,13 @@ just using gorms conventions or struct tags.
 <details>
   <summary>See commands</summary>
 
-```
-
+```makefile
+make create_task
+make update_task
+make update_columns
+make batch_update
+make delete_task
+make transactions
 ```
 
 </details>
