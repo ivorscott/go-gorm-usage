@@ -131,3 +131,45 @@ delete_task:
 transactions:
 	@echo "running ./examples/postgres/_crud/transactions"
 	@go run ./examples/postgres/_crud/transactions
+
+# Querying the database
+
+find:
+	@echo "running ./examples/postgres/_querying/find"
+	@go run ./examples/postgres/_querying/find
+
+where_clauses:
+	@echo "running ./examples/postgres/_querying/whereClauses"
+	@go run ./examples/postgres/_querying/whereClauses
+
+eager_loading:
+	@echo "running ./examples/postgres/_querying/eagerLoading"
+	@go run ./examples/postgres/_querying/eagerLoading
+
+limits_orderby_offset:
+	@echo "running ./examples/postgres/_querying/limitsOrderbyOffset"
+	@go run ./examples/postgres/_querying/limitsOrderbyOffset
+
+subsets:
+	@echo "running ./examples/postgres/_querying/subsets"
+	@go run ./examples/postgres/_querying/subsets
+
+attribute_assignments:
+	@echo "running ./examples/postgres/_querying/attributeAssignments"
+	@go run ./examples/postgres/_querying/attributeAssignments
+
+joins:
+	@echo "running ./examples/postgres/_querying/joins"
+	@go run ./examples/postgres/_querying/joins
+
+rows:
+	@echo "running ./examples/postgres/_querying/rows"
+	@go run ./examples/postgres/_querying/rows
+
+grouping:
+	@echo "running ./examples/postgres/_querying/grouping"
+	@go run ./examples/postgres/_querying/grouping
+
+raw_sql:
+	@echo "running ./examples/postgres/_querying/rawSql"
+	@go run ./examples/postgres/_querying/rawSql
