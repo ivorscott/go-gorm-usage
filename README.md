@@ -123,8 +123,12 @@ make raw_sql
 <details>
   <summary>See commands</summary>
 
-```
-
+```makefile
+make add_column
+make add_index
+make drop_column
+make modify_column
+make remove_entity
 ```
 
 </details>
