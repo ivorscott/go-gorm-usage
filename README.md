@@ -64,9 +64,21 @@ make index_call # call index and remove index functions
 <details>
   <summary>See commands</summary>
 
+```makefile
+make one_to_one # make a one to one relationship
+make foreign_key # make foreign key constraint and cascade the record on delete/update
+make one_to_many # make a one to many relationship
+make many_to_many # make a many to many relationship
+make polymorphic # make polymorphic relationship
 ```
 
-```
+Gorm also allows you to make assiociations bewteen tables using
+the association accessor methods, meaning you aren't limited to
+just using gorms conventions or struct tags.
+
+[See Associations](https://gorm.io/docs/associations.html)
+
+<img src="./docs/assoc.png" height=300/>
 
 </details>
 
