@@ -105,3 +105,29 @@ many_to_many:
 polymorphic:
 	@echo "running ./examples/postgres/_relationships/polymorphism"
 	@go run ./examples/postgres/_relationships/polymorphism
+
+# CRUD
+
+create_task:
+	@echo "running ./examples/postgres/_crud/create"
+	@go run ./examples/postgres/_crud/create
+
+update_task:
+	@echo "running ./examples/postgres/_crud/update"
+	@go run ./examples/postgres/_crud/update
+
+update_columns:
+	@echo "running ./examples/postgres/_crud/updateColumns"
+	@go run ./examples/postgres/_crud/updateColumns
+
+batch_update:
+	@echo "running ./examples/postgres/_crud/batchUpdate"
+	@go run ./examples/postgres/_crud/batchUpdate
+
+delete_task:
+	@echo "running ./examples/postgres/_crud/delete"
+	@go run ./examples/postgres/_crud/delete
+
+transactions:
+	@echo "running ./examples/postgres/_crud/transactions"
+	@go run ./examples/postgres/_crud/transactions
