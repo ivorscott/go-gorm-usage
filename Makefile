@@ -195,3 +195,17 @@ modify_column:
 remove_entity:
 	@echo "running ./examples/postgres/_modifying/removeEntity"
 	@go run ./examples/postgres/_modifying/removeEntity
+
+# Advanced
+
+callbacks:
+	@echo "running ./examples/postgres/_advanced/callbacks"
+	@go run ./examples/postgres/_advanced/callbacks
+
+scopes:
+	@echo "running ./examples/postgres/_advanced/scopes"
+	@go run ./examples/postgres/_advanced/scopes
+
+logging:
+	@echo "running ./examples/postgres/_advanced/logging"
+	@go run ./examples/postgres/_advanced/logging
