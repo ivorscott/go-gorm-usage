@@ -72,8 +72,8 @@ make many_to_many # make a many to many relationship
 make polymorphic # make polymorphic relationship
 ```
 
-Gorm also allows you to make assiociations bewteen tables using
-the association accessor methods, meaning you aren't limited to
+Make associations between tables using
+the association accessor methods. You aren't limited to
 just using gorms conventions or struct tags.
 
 [See Associations](https://gorm.io/docs/associations.html)
